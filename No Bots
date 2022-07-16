@@ -1,0 +1,1 @@
+!author.name match r"^(RibCrush|PhantomBot|Wizebot|Coebot|Moobot|Nightbot|StreamElements|Fossabot|ThePositiveBot|SupiBot)$"
