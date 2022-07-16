@@ -54,7 +54,7 @@ author.subbed
             },
             {
                 "name": "NO Bots",
-                "filter": "!author.name match r\"^(RibCrush|PhantomBot|Wizebot|Coebot|Moobot|Nightbot|StreamElements|Fossabot|ThePositiveBot|SupiBot)$\"",
+                "filter": "!author.name match r\"^(PhantomBot|Wizebot|Coebot|Moobot|Nightbot|StreamElements|Fossabot|ThePositiveBot|SupiBot|RibCrush)$\"",
                 "id": "1b184b48-fef5-44b6-bea1-00116f16b00b"
             },
             {
