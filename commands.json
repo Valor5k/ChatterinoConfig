@@ -1,0 +1,152 @@
+{
+    "commands": [
+        {
+            "name": "/open",
+            "func": "/openurl https://twitch.tv/{channel.name}"
+        },
+        {
+            "name": "jam",
+            "func": "xar2EDM catJAM xar2EDM catJAM xar2EDM catJAM {1+}"
+        },
+        {
+            "name": "b",
+            "func": "BOOBA {1+}"
+        },
+        {
+            "name": "bg",
+            "func": "Bedge {1+}"
+        },
+        {
+            "name": "c",
+            "func": "Clueless {1+}"
+        },
+        {
+            "name": "cp",
+            "func": "COPIUM {1+}"
+        },
+        {
+            "name": "d",
+            "func": "Drake {1+}"
+        },
+        {
+            "name": "dg",
+            "func": "DansGame {1+}"
+        },
+        {
+            "name": "e",
+            "func": "EZ Clap {1+}"
+        },
+        {
+            "name": "gc",
+            "func": "GIGACHAD {1+}"
+        },
+        {
+            "name": "gh",
+            "func": "gachiHYPER {1+}"
+        },
+        {
+            "name": "h",
+            "func": "Hmm {1+}"
+        },
+        {
+            "name": "j",
+            "func": "Jebaited {1+}"
+        },
+        {
+            "name": "k",
+            "func": "Kappa {1+}"
+        },
+        {
+            "name": "l",
+            "func": "LULW {1+}"
+        },
+        {
+            "name": "lj",
+            "func": "lebronJAM"
+        },
+        {
+            "name": "lm",
+            "func": "Lamonting {1+}"
+        },
+        {
+            "name": "m",
+            "func": "monkaW {1+}"
+        },
+        {
+            "name": "ml",
+            "func": "monkaLaugh {1+}"
+        },
+        {
+            "name": "ms",
+            "func": "monkaS {1+}"
+        },
+        {
+            "name": "n",
+            "func": "NODDERS {1+}"
+        },
+        {
+            "name": "no",
+            "func": "NOOO {1+}"
+        },
+        {
+            "name": "o",
+            "func": "OMEGALUL {1+}"
+        },
+        {
+            "name": "p",
+            "func": "Pog {1+}"
+        },
+        {
+            "name": "pa",
+            "func": "PepegaAim {1+}"
+        },
+        {
+            "name": "ph",
+            "func": "PepeHands {1+}"
+        },
+        {
+            "name": "pl",
+            "func": "PepeLaugh {1+}"
+        },
+        {
+            "name": "pp",
+            "func": "Pepega {1+}"
+        },
+        {
+            "name": "pr",
+            "func": "pepeRun {1+}"
+        },
+        {
+            "name": "s",
+            "func": "Sadge {1+}"
+        },
+        {
+            "name": "t",
+            "func": "TriHard {1+}"
+        },
+        {
+            "name": "wh",
+            "func": "WideHardo {1+}"
+        },
+        {
+            "name": "wp",
+            "func": "widepeepoHappy {1+}"
+        },
+        {
+            "name": "wtd",
+            "func": "WAYTOODANK {1+}"
+        },
+        {
+            "name": "5",
+            "func": "5Head {1+}"
+        },
+        {
+            "name": "...",
+            "func": "PauseChamp {1+}"
+        },
+        {
+            "name": ";",
+            "func": "D: {1+}"
+        }
+    ]
+}
