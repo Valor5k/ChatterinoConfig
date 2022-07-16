@@ -32,3 +32,52 @@ author.subbed
 ```
 !author.name match r"^(RibCrush|PhantomBot|Wizebot|Coebot|Moobot|Nightbot|StreamElements|Fossabot|ThePositiveBot|SupiBot)$" && !message.content match r"^(!|#|\$|%|\^|&|\*|<|>|`|~|-|;|m!|\\|/|@@)" && !message.content match r"^\[.*] peepoTalk.*ImTalking" && !flags.system_message
 ```
+
+##### Filters.json - This can be pasted over the existing "filtering" section of your settings file at C:\Users\*user*\AppData\Roaming\Chatterino2\Settings to get all the above filters in one go.
+```
+"filtering": {
+        "filters": [
+            {
+                "name": "Highlighted",
+                "filter": "flags.highlighted",
+                "id": "ffba0b54-2066-4f69-adce-7a4cd910beb8"
+            },
+            {
+                "name": "Sub Only",
+                "filter": "author.subbed",
+                "id": "d1ad8b6f-860d-45c4-bb89-ed8be3d4c902"
+            },
+            {
+                "name": "Clean Chat",
+                "filter": "!author.name match r\"^(RibCrush|PhantomBot|Wizebot|Coebot|Moobot|Nightbot|StreamElements|Fossabot|ThePositiveBot|SupiBot)$\" && !message.content match r\"^(!|#|\\$|%|\\^|&|\\*|<|>|`|~|-|;|m!|\\\\|/|@@)\" && !message.content match r\"^\\[.*] peepoTalk.*ImTalking\" && !flags.system_message",
+                "id": "30c55051-430f-4ef0-a543-edd3b5e45d32"
+            },
+            {
+                "name": "NO Bots",
+                "filter": "!author.name match r\"^(RibCrush|PhantomBot|Wizebot|Coebot|Moobot|Nightbot|StreamElements|Fossabot|ThePositiveBot|SupiBot)$\"",
+                "id": "1b184b48-fef5-44b6-bea1-00116f16b00b"
+            },
+            {
+                "name": "NO Commands",
+                "filter": "!message.content match r\"^(!|#|\\$|%|\\^|&|\\*|<|>|`|~|-|;|m!|\\\\|/|@@)\"",
+                "id": "366cf514-3a92-430a-9f74-39a43ca386cc"
+            },
+            {
+                "name": "NO Transcribing",
+                "filter": "!message.content match r\"^\\[.*] peepoTalk.*ImTalking\"",
+                "id": "51058dae-3756-4a24-b5d3-04b459fdcf66"
+            },
+            {
+                "name": "NO System Messages",
+                "filter": "!flags.system_message",
+                "id": "7ffffbac-cb3e-4633-b616-ee341511e0b8"
+            },
+            {
+                "name": "Test",
+                "filter": "message.content match ri\"^(o|p)\"",
+                "id": "e4ed8345-60c5-49ee-88e8-8c90a60c8f45"
+            }
+        ],
+        "excludeUserMessages": true
+    },
+```
