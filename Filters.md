@@ -1,4 +1,4 @@
-##### Highlighted Only - Shows messages higlighlighted by your Chatterino settings.
+##### Highlighted Only - Shows messages highlighted by your Chatterino settings.
 ```
 flags.highlighted
 ```
