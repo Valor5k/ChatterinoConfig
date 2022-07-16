@@ -33,7 +33,7 @@ author.subbed
 !author.name match r"^(RibCrush|PhantomBot|Wizebot|Coebot|Moobot|Nightbot|StreamElements|Fossabot|ThePositiveBot|SupiBot)$" && !message.content match r"^(!|#|\$|%|\^|&|\*|<|>|`|~|-|;|m!|\\|/|@@)" && !message.content match r"^\[.*] peepoTalk.*ImTalking" && !flags.system_message
 ```
 
-##### Filters.json - This can be pasted over the existing "filtering" section of your settings file at C:\Users\\"username"\AppData\Roaming\Chatterino2\Settings to get all the above filters in one go.
+##### Filters json - This can be pasted over the existing "filtering" section of your settings file at C:\Users\\"username"\AppData\Roaming\Chatterino2\Settings to get all the above filters in one go.
 ```
 "filtering": {
         "filters": [
