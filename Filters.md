@@ -15,7 +15,7 @@ author.subbed
 
 ##### NO Bots - Removes bot accounts by their name. You can add bot accounts you see by adding their name seperated by "|" (Case Sensitive).
 ```
-!author.name match r"^(PhantomBot|Wizebot|Coebot|Moobot|Nightbot|StreamElements|Fossabot|ThePositiveBot|SupiBot)$"
+!author.name match r"^(PhantomBot|Wizebot|Coebot|Moobot|Nightbot|StreamElements|Fossabot|ThePositiveBot|SupiBot|RibCrush)$"
 ```
 
 ##### NO Commands - Removes messages starting with common command characters such as "!uptime". Add or remove as you want, seperated by "|". These characters: + . * ? ^ $ ( ) [ ] { } | \ are special and must be preceded by "\\" eg. "\\$" = "$".
@@ -30,7 +30,7 @@ author.subbed
 
 ##### Clean Chat - Combines NO System Messages, No Bots, No Commands, and NO Transcibinbg into one filter.
 ```
-!author.name match r"^(RibCrush|PhantomBot|Wizebot|Coebot|Moobot|Nightbot|StreamElements|Fossabot|ThePositiveBot|SupiBot)$" && !message.content match r"^(!|#|\$|%|\^|&|\*|<|>|`|~|-|;|m!|\\|/|@@)" && !message.content match r"^\[.*] peepoTalk.*ImTalking" && !flags.system_message
+!author.name match r"^(PhantomBot|Wizebot|Coebot|Moobot|Nightbot|StreamElements|Fossabot|ThePositiveBot|SupiBot|RibCrush)$" && !message.content match r"^(!|#|\$|%|\^|&|\*|<|>|`|~|-|;|m!|\\|/|@@)" && !message.content match r"^\[.*] peepoTalk.*ImTalking" && !flags.system_message
 ```
 
 ##### Filters.json - This can be pasted over the existing "filtering" section of your settings file at C:\Users\\"username"\AppData\Roaming\Chatterino2\Settings to get all the above filters in one go.
@@ -49,7 +49,7 @@ author.subbed
             },
             {
                 "name": "Clean Chat",
-                "filter": "!author.name match r\"^(RibCrush|PhantomBot|Wizebot|Coebot|Moobot|Nightbot|StreamElements|Fossabot|ThePositiveBot|SupiBot)$\" && !message.content match r\"^(!|#|\\$|%|\\^|&|\\*|<|>|`|~|-|;|m!|\\\\|/|@@)\" && !message.content match r\"^\\[.*] peepoTalk.*ImTalking\" && !flags.system_message",
+                "filter": "!author.name match r\"^(PhantomBot|Wizebot|Coebot|Moobot|Nightbot|StreamElements|Fossabot|ThePositiveBot|SupiBot|RibCrush)$\" && !message.content match r\"^(!|#|\\$|%|\\^|&|\\*|<|>|`|~|-|;|m!|\\\\|/|@@)\" && !message.content match r\"^\\[.*] peepoTalk.*ImTalking\" && !flags.system_message",
                 "id": "30c55051-430f-4ef0-a543-edd3b5e45d32"
             },
             {
