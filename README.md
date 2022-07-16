@@ -1,3 +1,3 @@
 # ChatterinoConfig
-Filters and Commands for Chatterino
-This is just a backup of my Chatterino config that I decided to make public since there is very few good examples of regex filters online.
+This repository is a backup of my Chatterino config. /n
+I decided to make it public with a readable, commented version of the filters since there are very few good examples of regex filters online.
