@@ -18,7 +18,7 @@ author.subbed
 !author.name match r"^(RibCrush|PhantomBot|Wizebot|Coebot|Moobot|Nightbot|StreamElements|Fossabot|ThePositiveBot|SupiBot)$"
 ```
 
-##### NO Commands - Removes messages starting with common command characters such as "!uptime". Add or remove as you want, seperated by "|". These characters: . + * ? ^ $ ( ) [ ] { } | \ are special and must be preceded by "\\" eg. "\\$" = "$".
+##### NO Commands - Removes messages starting with common command characters such as "!uptime". Add or remove as you want, seperated by "|". These characters: + . * ? ^ $ ( ) [ ] { } | \ are special and must be preceded by "\\" eg. "\\$" = "$".
 ```
 !message.content match r"^(!|#|\$|%|\^|&|\*|<|>|`|~|-|;|m!|\\|/|@@)"
 ```
