@@ -13,7 +13,7 @@ author.subbed
 !flags.system_message
 ```
 
-##### NO Bots - Removes bot accounts by there name. You can add bot accounts you see by adding their name divided by "|" (Case Sensitive).
+##### NO Bots - Removes bot accounts by there name. You can add bot accounts you see by adding their name seperated by "|" (Case Sensitive).
 ```
 !author.name match r"^(RibCrush|PhantomBot|Wizebot|Coebot|Moobot|Nightbot|StreamElements|Fossabot|ThePositiveBot|SupiBot)$"
 ```
