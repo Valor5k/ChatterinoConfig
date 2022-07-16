@@ -72,11 +72,6 @@ author.subbed
                 "filter": "!flags.system_message",
                 "id": "7ffffbac-cb3e-4633-b616-ee341511e0b8"
             },
-            {
-                "name": "Test",
-                "filter": "message.content match ri\"^(o|p)\"",
-                "id": "e4ed8345-60c5-49ee-88e8-8c90a60c8f45"
-            }
         ],
         "excludeUserMessages": true
     },
