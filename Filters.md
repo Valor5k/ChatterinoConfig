@@ -1,3 +1,5 @@
+# Filters
+
 ##### Highlighted Only - Shows messages highlighted by your Chatterino settings.
 ```
 flags.highlighted
@@ -75,4 +77,39 @@ author.subbed
         ],
         "excludeUserMessages": true
     },
+```
+
+# Regex example filters
+### Standard chat message filter format: message.content match r"(word)"
+#### ! = not (you don't want to see whats being filtered)
+#### r = case sensitive
+#### ri = not case sensitive
+#### | = or
+#### ^ = start of message
+#### $ = end of message
+#### .* = anything can be here
+
+##### Remove messages containing word1 or word2.
+```
+!message.content match r"(word1|word2)"
+```
+
+##### Remove messages starting with word1 or word2.
+```
+!message.content match r"^(word1|word2)"
+```
+
+##### Remove messages ending with word1 or word2.
+```
+!message.content match r"(word1|word2)$"
+```
+
+##### Remove messages that are exactly word1 or word2.
+```
+!message.content match r"^(word1|word2)$"
+```
+
+##### Remove messages that start with word1, then some other words, then word2 with anything after that.
+```
+!message.content match r"^(word1.*word2)"
 ```
