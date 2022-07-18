@@ -12,7 +12,7 @@ flags.highlighted
 
 ##### ------------Clean Chat------------ Combines NO System Messages, No Bots, No Commands, NO Links, and NO Transcibinbg into one filter.
 ```
-!message.content match r"(https?://|steam://)" && !message.content match r"^(!|%|&|\*|`|~|;|m!|\\|/|@@)" && !message.content match r"^\[.*] peepoTalk.*ImTalking" && !flags.system_message && !author.name match r"^(SchnozeBot|RibCrush|PhantomBot|Wizebot|Coebot|Moobot|Nightbot|StreamElements|Fossabot|ThePositiveBot|SupiBot)$"
+!message.content match r"(https?:\/\/|steam:\/\/)" && !message.content match r"^(!|%|&|\*|`|~|;|m!|\\|/|@@)" && !message.content match r"^\[.*] peepoTalk.*ImTalking" && !flags.system_message && !author.name match r"^(SchnozeBot|RibCrush|PhantomBot|Wizebot|Coebot|Moobot|Nightbot|StreamElements|Fossabot|ThePositiveBot|SupiBot)$"
 ```
 
 ##### NO Bots - Removes common bot accounts by their name. You can add bot accounts you see by adding their name seperated by "|" (Case Sensitive).
@@ -22,7 +22,7 @@ flags.highlighted
 
 ##### NO Links - Removes messages containing links.
 ```
-!message.content match r"(https?://|steam://)"
+!message.content match r"(https?:\/\/|steam:\/\/)"
 ```
 
 ##### NO Commands - Removes messages starting with common command characters such as "!uptime". Add or remove as you want, seperated by "|". These characters: + . * ? ^ $ ( ) [ ] { } | \ are special and must be preceded by "\\" eg. "\\$" = "$".
@@ -57,12 +57,12 @@ flags.highlighted
 
 ##### -----------Show Filtered----------- Combines Cleaned Messages, Repetative Spam, and One Word Spam into one filter.
 ```
-message.content match r"^(\S+)$" || message.content match r"(\b\S{2,}\b)(.*\b\1\b){4,}|^(?!.*https?:\/\/)(?!.*steam:\/\/)\S{35,}" || message.content match r"(https?://|steam://)" || message.content match r"^(!|%|&|\*|`|~|;|m!|\\|/|@@)" || message.content match r"^\[.*] peepoTalk.*ImTalking" || flags.system_message || author.name match r"^(SchnozeBot|RibCrush|PhantomBot|Wizebot|Coebot|Moobot|Nightbot|StreamElements|Fossabot|ThePositiveBot|SupiBot)$"
+message.content match r"^(\S+)$" || message.content match r"(\b\S{2,}\b)(.*\b\1\b){4,}|^(?!.*https?:\/\/)(?!.*steam:\/\/)\S{35,}" || message.content match r"(https?:\/\/|steam:\/\/)" || message.content match r"^(!|%|&|\*|`|~|;|m!|\\|/|@@)" || message.content match r"^\[.*] peepoTalk.*ImTalking" || flags.system_message || author.name match r"^(SchnozeBot|RibCrush|PhantomBot|Wizebot|Coebot|Moobot|Nightbot|StreamElements|Fossabot|ThePositiveBot|SupiBot)$"
 ```
 
 ##### Cleaned Messages - Shows messages removed by the Clean Chat filter.
 ```
-message.content match r"(https?://|steam://)" || message.content match r"^(!|%|&|\*|`|~|;|m!|\\|/|@@)" || message.content match r"^\[.*] peepoTalk.*ImTalking" || flags.system_message || author.name match r"^(SchnozeBot|RibCrush|PhantomBot|Wizebot|Coebot|Moobot|Nightbot|StreamElements|Fossabot|ThePositiveBot|SupiBot)$"
+message.content match r"(https?:\/\/|steam:\/\/)" || message.content match r"^(!|%|&|\*|`|~|;|m!|\\|/|@@)" || message.content match r"^\[.*] peepoTalk.*ImTalking" || flags.system_message || author.name match r"^(SchnozeBot|RibCrush|PhantomBot|Wizebot|Coebot|Moobot|Nightbot|StreamElements|Fossabot|ThePositiveBot|SupiBot)$"
 ```
 
 ##### Repetitive Spam - Shows messages removed by the NO Repetitive Spam filter.
