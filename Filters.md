@@ -45,7 +45,7 @@ flags.highlighted
 !message.content match r"(\b\S{2,}\b)(.*\b\1\b){4,}|^(?!.*https?:\/\/)(?!.*steam:\/\/)\S{35,}" && !message.content match r"^(\S+)$"
 ```
 
-##### NO Repetitive Spam - Removes messages with words repeated more than 5 times or words over 35 characters long not including links.
+##### NO Repetitive Spam - Removes messages with words repeated 5 or more times, or words over 35 characters long not including links.
 ```
 !message.content match r"(\b\S{2,}\b)(.*\b\1\b){4,}|^(?!.*https?:\/\/)(?!.*steam:\/\/)\S{35,}"
 ```
